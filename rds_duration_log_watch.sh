@@ -34,6 +34,7 @@ end
 
 # 2.1で出力したファイルを1行ずつ読み込む。
 # ログのduration時間がduration_thresholdで指定した値以上の場合はduration_time3000_logsへ書き込む
+`touch #{duration_time3000_logs}`
 File.open(duration_logs) do |logs|
   logs.each_line do |line|
     duration_time = line.slice(/duration:\s\d+\.\d+/)
