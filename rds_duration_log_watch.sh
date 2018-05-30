@@ -11,7 +11,7 @@ check_back_time = 12
 duration_threshold = 3000
 duration_logs = "#{work_dir}/duration.log"
 duration_time3000_logs = "#{work_dir}/#{file_timestamp}_duration_time3000.log"
-duration_time3000_logs_zip = "#{work_dir}/#{file_timestamp}_duration_time3000.zip"
+duration_time3000_logs_zip = "#{work_dir}/#{file_timestamp}.zip"
 search_word = "duration"
 
 db_name = ""
