@@ -51,6 +51,7 @@ end
 
 # 3.duration_time3000_logsのログをカウントする
 duration_count = `wc -l < #{duration_time3000_logs}`
+duration_count.chomp!
 
 target_time_from = (jst_time_now - 3600 * 12).strftime("%Y年%m月%d日 %H:00")
 target_time_to = jst_time_now.strftime("%Y年%m月%d日 %H:00")
